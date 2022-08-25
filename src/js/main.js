@@ -1,31 +1,31 @@
-let btn = document.getElementById('btn');
+// let btn = document.getElementById('btn');
 
-let par = document.getElementById('par');
+// let par = document.getElementById('par');
 
-let cnt = document.getElementById('counter')
-let integer = 0;
+// let cnt = document.getElementById('counter')
+// let integer = 0;
 
-function popUp() {
+// function popUp() {
 
-let bdy = document.querySelector('body')
-let popUp = document.createElement('div');
-popUp.setAttribute('class', 'pop');
-popUp.innerHTML = 'You have clicked '+integer+ ' times to related button.'
+// let bdy = document.querySelector('body')
+// let popUp = document.createElement('div');
+// popUp.setAttribute('class', 'pop');
+// popUp.innerHTML = 'You have clicked '+integer+ ' times to related button.'
 
-bdy.append(popUp)
+// bdy.append(popUp)
 
-}
+// }
 
 
-btn.addEventListener('click', myFunction);
+// btn.addEventListener('click', myFunction);
 
-function myFunction() {
+// function myFunction() {
 
-integer +=1;
+// integer +=1;
 
-localStorage.setItem("incCount",integer);
-popUp();
-}
+// localStorage.setItem("incCount",integer);
+// popUp();
+// }
 
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
