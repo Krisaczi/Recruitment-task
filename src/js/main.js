@@ -1,31 +1,40 @@
-// let btn = document.getElementById('btn');
+let btn = document.getElementById('btn');
 
-// let par = document.getElementById('par');
+let par = document.getElementById('par');
 
-// let cnt = document.getElementById('counter')
-// let integer = 0;
-
-// function popUp() {
-
-// let bdy = document.querySelector('body')
-// let popUp = document.createElement('div');
-// popUp.setAttribute('class', 'pop');
-// popUp.innerHTML = 'You have clicked '+integer+ ' times to related button.'
-
-// bdy.append(popUp)
-
-// }
+let cnt = document.getElementById('counter')
+let integer = 0;
 
 
-// btn.addEventListener('click', myFunction);
 
-// function myFunction() {
+function popUp() {
 
-// integer +=1;
+let bdy = document.querySelector('alert')
+let par = document.createElement('p')
+let innerText = 'You have clicked '+integer+ ' times to related button.'
 
-// localStorage.setItem("incCount",integer);
-// popUp();
-// }
+par.add(innerText);
+
+bdy.append(par);
+
+}
+
+
+btn.addEventListener('click', myFunction);
+
+function myFunction() {
+
+integer +=1;
+
+sessionStorage.setItem("incCount",integer);
+let bdy = document.querySelector('alert')
+let par = document.createElement('p')
+let innerText = 'You have clicked '+integer+ ' times to related button.'
+
+
+console.log('object');
+}
+
 
 
 
@@ -60,6 +69,8 @@ function openModal(modal) {
   if (modal == null) return
   modal.classList.add('active')
   overlay.classList.add('active')
+  console.log('click');
+  
 }
 
 function closeModal(modal) {
