@@ -1,18 +1,20 @@
 const btn = document.getElementById('btn');
 
-let par = document.getElementById('par');
-
-let cnt = document.getElementById('counter')
-let integer = 0;
 
 btn.addEventListener('click', myFunction);
 
 function myFunction() {
-integer +=1;
-localStorage.setItem("incCount",integer);
-document.getElementById('alert').innerHTML = `You have clicked <b> ${integer} times </b> to related button.`
+
+if (localStorage.clickcount) {
+  localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+       localStorage.clickcount = 1;
+     }
+document.getElementById('alert').innerHTML = `You have clicked <b id="bold"> ${localStorage.clickcount}times </b> to related button.`
 
 }
+
+
 
 // Popup functionality
 
