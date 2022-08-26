@@ -8,14 +8,17 @@ body{
     padding: 0;
     margin: 0;
     display: grid;
-    background: #E5E5E5;
-    max-width: 1440px;
-    height: 960px;
+    
+
 }
 
 #wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 1440px;
+    height: 960px;
+    border: 1px solid red;
+    background-color: #E5E5E5;
    
 }
 
@@ -26,6 +29,7 @@ overflow: hidden;
 display: grid;
 margin-top: 96px;
 margin-left: 230px;
+
 }
 
 .img-hero {
@@ -39,8 +43,9 @@ margin-left: 230px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(/images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale\,w_480.jpg);
+  background-image: url(/images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale\,w_1400.jpg);
 
+    
 }
 
 #content{
@@ -49,6 +54,17 @@ margin-left: 230px;
   height: 250px;
   left: 830px;
   top: 136px;
+}
+
+#btn{
+  background: #E4C1AE;
+  border: none;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 40px;
+  gap: 10px;
 }
 
 .modal {
@@ -92,6 +108,7 @@ margin-left: 230px;
     background: none;
     font-size: 1.25rem;
     font-weight: bold;
+    margin-right: 46px;
   }
   
   .modal-body {
@@ -115,4 +132,169 @@ margin-left: 230px;
   #overlay.active {
     opacity: 1;
     pointer-events: all;
+  }
+
+  @media screen and (max-width: 1225px) {
+    
+    #hero{
+      width: 450px;
+      height: 294px;
+      overflow: hidden;
+      display: grid;
+      margin-top: 48px;
+      margin-left: 115px;
+      
+      }
+      
+      .img-hero {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale\,w_1394.jpg);
+      
+          
+      }
+
+      #content{
+        position: absolute;
+        width: 380px;
+        height: 250px;
+        left: 700px;
+        top: 88px;
+  
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    
+    #hero{
+      width: 320px;
+      height: 234px;
+      overflow: hidden;
+      display: grid;
+      margin-top: 48px;
+      margin-left: 115px;
+      
+      }
+      
+      .img-hero {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale\,w_480.jpg);
+      
+          
+      }
+
+      #content{
+        position: absolute;
+        width: 380px;
+        height: 250px;
+        left: 500px;
+        top: 58px;
+  
+    }
+
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 200ms ease-in-out;
+      border: 1px solid black;
+      z-index: 10;
+      background-color: white;
+      width: 720px;
+      height: 160px;
+      
+    }
+    
+    .modal.active {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+
+    body{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;  
+  }
+
+    #wrapper {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      border: 1px solid red;
+     
+  }
+    
+    #hero{
+     
+      width: 320px;
+      height: 234px;
+      overflow: hidden;
+      display: grid;
+      margin-top: 48px;
+      margin-left: 115px;
+      
+      }
+      
+      .img-hero {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale\,w_480.jpg);
+      
+          
+      }
+
+      #content{
+        
+        position: absolute;
+        width: 380px;
+        height: 250px;
+        left: 500px;
+        top: 58px;
+  
+    }
+
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 200ms ease-in-out;
+      border: 1px solid black;
+      z-index: 10;
+      background-color: white;
+      width: 600px;
+      height: 150px;
+      
+    }
+    
+    .modal.active {
+      transform: translate(-50%, -50%) scale(1);
+    }
   }

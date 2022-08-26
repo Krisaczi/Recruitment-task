@@ -10,12 +10,9 @@ btn.addEventListener('click', myFunction);
 function myFunction() {
 integer +=1;
 localStorage.setItem("incCount",integer);
-document.getElementById('alert').innerHTML = `You have <bold>clicked ${integer} </bold> times to related button.`
+document.getElementById('alert').innerHTML = `You have clicked <b> ${integer} times </b> to related button.`
 
 }
-
-
-
 
 // Popup functionality
 
