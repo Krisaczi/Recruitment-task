@@ -1,4 +1,4 @@
-let btn = document.getElementById('btn');
+const btn = document.getElementById('btn');
 
 let par = document.getElementById('par');
 
@@ -7,17 +7,17 @@ let integer = 0;
 
 
 
-function popUp() {
+// function popUp() {
 
-let bdy = document.querySelector('alert')
-let par = document.createElement('p')
-let innerText = 'You have clicked '+integer+ ' times to related button.'
+// let bdy = document.querySelector('alert')
+// let par = document.createElement('p')
+// let innerText = 'You have clicked '+integer+ ' times to related button.'
 
-par.add(innerText);
+// par.add(innerText);
 
-bdy.append(par);
+// bdy.append(par);
 
-}
+// }
 
 
 btn.addEventListener('click', myFunction);
@@ -26,13 +26,13 @@ function myFunction() {
 
 integer +=1;
 
+
 sessionStorage.setItem("incCount",integer);
-let bdy = document.querySelector('alert')
-let par = document.createElement('p')
-let innerText = 'You have clicked '+integer+ ' times to related button.'
+
+document.getElementById('alert').innerText = 'You have clicked '+integer+ ' times to related button.'
 
 
-console.log('object');
+
 }
 
 
