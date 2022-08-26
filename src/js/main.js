@@ -1,16 +1,21 @@
 const btn = document.getElementById('btn');
+let par = document.getElementById('par');
+let cnt = document.getElementById('counter');
 
 
 btn.addEventListener('click', myFunction);
 
 function myFunction() {
 
-if (localStorage.clickcount) {
+
+if (localStorage.clickcount > 5) {
   localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
+
+      } else {
        localStorage.clickcount = 1;
+       console.log('preset');
      }
-document.getElementById('alert').innerHTML = `You have clicked <b id="bold"> ${localStorage.clickcount}times </b> to related button.`
+document.getElementById('alert').innerHTML = `You have clicked <b> ${localStorage.clickcount} times </b> to related button.<button id="reset">Reset</button>`
 
 }
 
@@ -47,8 +52,7 @@ function openModal(modal) {
   if (modal == null) return
   modal.classList.add('active')
   overlay.classList.add('active')
-  console.log('click');
-  
+ 
 }
 
 function closeModal(modal) {
