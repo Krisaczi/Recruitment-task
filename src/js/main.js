@@ -10,7 +10,7 @@ btn.addEventListener('click', myFunction);
 function myFunction() {
 integer +=1;
 localStorage.setItem("incCount",integer);
-document.getElementById('alert').innerText = 'You have clicked '+integer+ ' times to related button.'
+document.getElementById('alert').innerHTML = `You have <bold>clicked ${integer} </bold> times to related button.`
 
 }
 
