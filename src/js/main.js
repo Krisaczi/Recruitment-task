@@ -1,12 +1,9 @@
+// Button 
+
 const btn = document.getElementById('btn');
-let par = document.getElementById('par');
-let cnt = document.getElementById('counter');
-
-
 btn.addEventListener('click', myFunction);
 
 function myFunction() {
-
 
 if (localStorage.clickcount > 5) {
   localStorage.clickcount = Number(localStorage.clickcount)+1;
@@ -18,8 +15,6 @@ if (localStorage.clickcount > 5) {
 document.getElementById('alert').innerHTML = `You have clicked <b> ${localStorage.clickcount} times </b> to related button.<button id="reset">Reset</button>`
 
 }
-
-
 
 // Popup functionality
 
