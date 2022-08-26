@@ -5,33 +5,12 @@ let par = document.getElementById('par');
 let cnt = document.getElementById('counter')
 let integer = 0;
 
-
-
-// function popUp() {
-
-// let bdy = document.querySelector('alert')
-// let par = document.createElement('p')
-// let innerText = 'You have clicked '+integer+ ' times to related button.'
-
-// par.add(innerText);
-
-// bdy.append(par);
-
-// }
-
-
 btn.addEventListener('click', myFunction);
 
 function myFunction() {
-
 integer +=1;
-
-
-sessionStorage.setItem("incCount",integer);
-
+localStorage.setItem("incCount",integer);
 document.getElementById('alert').innerText = 'You have clicked '+integer+ ' times to related button.'
-
-
 
 }
 

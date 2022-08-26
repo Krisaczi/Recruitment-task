@@ -9,27 +9,46 @@ body{
     margin: 0;
     display: grid;
     background: #E5E5E5;
+    max-width: 1440px;
+    height: 960px;
 }
 
 #wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+   
 }
 
-img {
-    position: absolute;
-    width: 505px;
-    height: 330px;
-    left: 230px;
-    top: 96px;
+#hero{
+width: 505px;
+height: 330px;
+overflow: hidden;
+display: grid;
+margin-top: 96px;
+margin-left: 230px;
+}
+
+.img-hero {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale\,w_480.jpg);
 
 }
 
-#text{
-    position: absolute;
-    width: 380px;
-    left: calc(50% - 380px/2 + 300px);
-    top: calc(50% - 50px/2 - 319px);
+#content{
+  position: absolute;
+  width: 380px;
+  height: 250px;
+  left: 830px;
+  top: 136px;
 }
 
 .modal {
