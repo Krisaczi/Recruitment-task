@@ -6,6 +6,7 @@ const reset = document.createElement("button");
 reset.classList.add("reset");
 reset.innerHTML = "reset";
 
+// Popup content
 function myFunction() {
   if (localStorage.clickcount) {
     localStorage.clickcount = Number(localStorage.clickcount) + 1;
@@ -15,6 +16,12 @@ function myFunction() {
   }
   document.getElementById('alert').innerHTML = `You have clicked <b> ${localStorage.clickcount} times </b> to related button.`
 
+  if(localStorage.clickcount<5) {
+    reset.style = "display: none;"
+  }
+  else{
+    reset.style = "display: block;"
+  }
   
   reset.addEventListener("click", () => {
     console.log("klik");
