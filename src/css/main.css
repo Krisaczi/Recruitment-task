@@ -83,6 +83,21 @@ p{
   
 }
 
+.reset{
+  background: #E4C1AE;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 40px;
+  width: fit-content;
+  text-transform: uppercase;
+  color: var(--buttonFColor);
+  cursor: pointer;
+  border: none;
+  margin: 10px 0 0 95px;
+}
+
 .modal {
     position: fixed;
     top: 50%;
@@ -156,6 +171,7 @@ p{
     background-color: #E4C1AE;
     border: none;
     border-radius: 32px;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 1225px) {
